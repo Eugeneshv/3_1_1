@@ -1,7 +1,7 @@
-package kata.PP.Tast_3_1_1.service;
+package kata.PP.Task_3_1_1.service;
 
-import kata.PP.Tast_3_1_1.entity.User;
-import kata.PP.Tast_3_1_1.repository.UserRepository;
+import kata.PP.Task_3_1_1.entity.User;
+import kata.PP.Task_3_1_1.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     @Autowired
     public UserServiceImpl(UserRepository userRepository) {
@@ -24,8 +24,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User save(User user) {
-        return userRepository.saveAndFlush(user);
+    public void save(User user) {
+        userRepository.save(user);
     }
 
     @Override

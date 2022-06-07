@@ -1,4 +1,4 @@
-package kata.PP.Tast_3_1_1.entity;
+package kata.PP.Task_3_1_1.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.Min;

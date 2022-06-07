@@ -1,7 +1,7 @@
-package kata.PP.Tast_3_1_1.controller;
+package kata.PP.Task_3_1_1.controller;
 
-import kata.PP.Tast_3_1_1.entity.User;
-import kata.PP.Tast_3_1_1.service.UserService;
+import kata.PP.Task_3_1_1.entity.User;
+import kata.PP.Task_3_1_1.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
